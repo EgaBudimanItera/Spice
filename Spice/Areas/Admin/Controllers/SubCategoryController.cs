@@ -28,7 +28,7 @@ namespace Spice.Areas.Admin.Controllers
         }
 
         public async Task<IActionResult> Create()
-        {
+        {//cara pertama unbound
             SubCategoryAndCategoryViewModel model = new SubCategoryAndCategoryViewModel()
             {
                 CategoryList = await _db.Category.ToListAsync(),
